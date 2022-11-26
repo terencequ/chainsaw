@@ -40,6 +40,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
         registry-url: 'https://registry.npmjs.org'
 
+    - name: Install Gulp
+      run: npm install --global gulp-cli
+
     - name: Increment Version & Publish to NPM
       run: bash ./publish.sh
       env:
