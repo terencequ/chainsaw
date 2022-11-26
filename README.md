@@ -1,5 +1,12 @@
 # Chainsaw
+[![Build & Publish to NPM](https://github.com/terencequ/chainsaw/actions/workflows/build-and-publish.yml/badge.svg)](https://github.com/terencequ/chainsaw/actions/workflows/build-and-publish.yml)
 
+## Links
+GitHub: https://github.com/terencequ/chainsaw
+
+NPM: https://www.npmjs.com/package/@terencequ/chainsaw
+
+## Description
 Chainsaw is a CSS library for my personal use. Written in [SASS](https://sass-lang.com/), this library is customisable, has a wide range of helper classes, and contributes to providing a unique style that I can employ in all my websites.
 
 ![README](https://media2.giphy.com/media/c2dCYBAB3K4M35t3yD/giphy.gif?cid=790b761145779746cfcf809f41580ee35d40e375ca041593&rid=giphy.gif&ct=g)
