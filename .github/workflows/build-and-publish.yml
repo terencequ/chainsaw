@@ -9,6 +9,7 @@ on:
     branches:
       - main
     paths-ignore:
+      - 'css/**'
       - package.json
       - package-lock.json
     tags-ignore:
