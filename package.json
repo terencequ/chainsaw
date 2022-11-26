@@ -1,6 +1,6 @@
 {
   "name": "@terencequ/chainsaw",
-  "version": "0.0.68",
+  "version": "0.0.69",
   "description": "A CSS library for Terence Qu's personal use.",
   "main": "index.js",
   "scripts": {
