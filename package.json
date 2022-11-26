@@ -4,7 +4,10 @@
   "description": "A CSS library for Terence Qu's personal use.",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp watch",
+    "preversion": "gulp",
+    "version": "git add .",
+    "postversion": "git push && git push --tags"
   },
   "author": "Terence Qu",
   "license": "ISC",
