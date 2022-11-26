@@ -1,0 +1,27 @@
+/* reset styles */
+* {
+  color: inherit;
+  margin: 0;
+}
+
+body {
+  color: inherit;
+  margin: 0;
+}
+
+.chainsaw-container {
+  width: 100%;
+  height: 100vh;
+}
+.text-theme-default .chainsaw-container {
+  font-family: "Arial", sans-serif;
+}
+.text-theme-goofy .chainsaw-container {
+  font-family: "Comic Sans MS", sans-serif;
+}
+.color-theme-light .chainsaw-container {
+  background-color: #d05858;
+}
+.color-theme-dark .chainsaw-container {
+  background-color: #222;
+}

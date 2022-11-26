@@ -1,0 +1,23 @@
+// Map of color themes. Use by placing ".color-theme-{themeName}" class on the parent HTML container.
+$color-themes: (
+  light: (
+    backgroundColor: #d05858,
+    textColor: #408bbd,
+  ),
+  dark: (
+    backgroundColor: #222,
+    textColor: #ddd,
+  ),
+) !default;
+
+
+// Map of text themes. Use by placing ".text-theme-{themeName}" class on the parent HTML container.
+$text-themes: (
+  default: (
+    fontFamily: ("Arial", sans-serif),
+  ),
+  goofy: (
+    fontFamily: ("Comic Sans MS", sans-serif)
+  )
+) !default;
+

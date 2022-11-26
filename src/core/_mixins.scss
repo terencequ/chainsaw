@@ -1,0 +1,32 @@
+@mixin colorThemify(){
+  @include themify($color-themes, 'color-theme'){
+    @content;
+  }
+}
+
+@mixin textThemify(){
+  @include themify($text-themes, 'text-theme'){
+    @content;
+  }
+}
+
+/// Defines a block of css to be dependent on the theme
+/// (theme is defined with a ".theme--..." class in a parent).
+@mixin themify($themes, $theme-key) {
+  @each $theme, $map in $themes {
+    .#{$theme-key}-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $sub-map in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+/// Within a themed mixin, get the themed value for a given key.
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}

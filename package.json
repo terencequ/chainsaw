@@ -1,0 +1,16 @@
+{
+  "name": "@terencequ/chainsaw",
+  "version": "0.0.66",
+  "description": "A CSS library for Terence Qu's personal use.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Terence Qu",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.56.1"
+  }
+}

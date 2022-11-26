@@ -1,0 +1,22 @@
+/* reset styles */
+* {
+  color: inherit;
+  margin: 0;
+}
+body {
+  color: inherit;
+  margin: 0;
+}
+
+/// Everything underneath body should be wrapped in one div called 'chainsaw-container' for global styling.
+.chainsaw-container {
+  width: 100%;
+  height: 100vh;
+
+  @include textThemify(){
+    font-family: themed('fontFamily');
+  }
+  @include colorThemify(){
+    background-color: themed('backgroundColor');
+  }
+}
