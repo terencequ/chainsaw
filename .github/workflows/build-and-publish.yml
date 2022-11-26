@@ -37,7 +37,9 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        registry-url: 'https://registry.npmjs.org:_authToken=${{secrets.NODE_AUTH_TOKEN}}'
+        registry-url: 'https://registry.npmjs.org'
 
-    - name: Build and Publish to NPM
+    - name: Increment Version & Publish to NPM
       run: bash ./publish.sh
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
